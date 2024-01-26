@@ -8,17 +8,15 @@
 body {
   overflow-x: hidden;
   position: relative; }
-text{
-  text-align: right;
-}
+
 body {
-  font-family: "Inter", sans-serif;7
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   line-height: 28px;
   color: #6a6a6a;
   font-size: 14px;
-  background-color: #eff2f1;
-   text-align: right; }
+  direction:rtl;
+  background-color: #eff2f1; }
 
 a {
   text-decoration: none;
@@ -122,7 +120,7 @@ a {
         font-size: 54px; } }
   .hero p {
     color: rgba(255, 255, 255, 0.5);
-    margin-botom: 30px; }
+    margin-bottom: 30px; }
   .hero .hero-img-wrap {
     position: relative; }
     .hero .hero-img-wrap img {

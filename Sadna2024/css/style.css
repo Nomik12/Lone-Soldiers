@@ -1,9 +1,4 @@
-/*
-* Template Name: UntreeStore
-* Template Author: Untree.co
-* Author URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 body {
   overflow-x: hidden;
@@ -419,7 +414,8 @@ a {
       z-index: -1; }
 
 .testimonial-section {
-  padding: 3rem 0 7rem 0; }
+  padding: 3rem 0 7rem 0; 
+  direction:ltr;}
 
 .testimonial-slider-wrap {
   position: relative; }
@@ -710,3 +706,27 @@ textarea {
     height: 50px;
     border-radius: 50%;
     background: rgba(59, 93, 80, 0.2); }
+
+    .custom-logo {
+      max-width: 80px; 
+      height: auto;
+      display: block; 
+      margin: 10px auto 20px; 
+  }
+
+  #Donation-Group {
+    display: block;
+    margin: 10 auto;
+    width: 100%;
+    height: auto;
+  }
+  
+  .custom-text-style{
+    font-family: Arial;
+    font-size: 18px;
+    color: black;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+  }

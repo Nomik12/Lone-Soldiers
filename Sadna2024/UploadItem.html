@@ -1,10 +1,6 @@
 <html lang="en"><head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="author" content="Untree.co">
 	<link rel="shortcut icon" href="Logo.png">
-  
-	<meta name="description" content="">
 	<meta name="keywords" content="bootstrap, bootstrap4">
   
 		  <!-- Bootstrap CSS -->
@@ -17,8 +13,8 @@
   
 	  <body>
   
-		  <!-- Start Header/Navigation -->
-		  <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+		  <!-- Start Header-->
+		  <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark">
   
 			  <div class="container">
 				<a class="navbar-brand" href="index.html">
@@ -26,20 +22,14 @@
 					
 				</a>
   
-				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="true" aria-label="Toggle navigation">
-					  <span class="navbar-toggler-icon"></span>
-				  </button>
   
-				  <div class="navbar-collapse collapse show" id="navbarsFurni" style="">
+				  <div class="navbar-collapse collapse show">
 					  <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
 						  <li class="nav-item">
-							  <a class="nav-link" href="index.html">דף בית</a>
+							  <a class="nav-link" href="FamilyHomePage.html">דף בית</a>
 						  </li>
-						  <li><a class="nav-link" href="shop.html">ציוד לתרומה</a></li>
-						  <li><a class="nav-link" href="about.html">תרומה כספית</a></li>
-						  
-						  
-						  
+						  <li><a class="nav-link" href="UploadItem.html">ציוד לתרומה</a></li>
+						  <li><a class="nav-link" href="MoneyDonation.html">תרומה כספית</a></li>	  
 					  </ul>
   
 					  
@@ -47,9 +37,9 @@
 			  </div>
 				  
 		  </nav>
-		  <!-- End Header/Navigation -->
+		  <!-- End Header -->
   
-		  <!-- Start Hero Section -->
+		  <!-- Start main title Section -->
 			  <div class="hero">
 				  <div class="container">
 					  <div class="row justify-content-between">
@@ -62,17 +52,18 @@
 						  </div>
 						  <div class="col-lg-7">
 							  <div class="hero-img-wrap">
-								  <img src="images/soldiers.png" class="img-fluid">
+								  <img src="images/picture16.jpg.png" class="img-fluid">
 							  </div>
 						  </div>
 					  </div>
 				  </div>
 			  </div>
-		  <!-- End Hero Section -->
+		  <!-- End main title Section -->
   
 		  
-		  <!-- Start Contact Form -->
-		  <div class="untree_co-section">
+		  <!-- Start upload Form -->
+		  <br>
+		  <div class="sadna-section">
 		<div class="container">
   
 		  <div class="block">
@@ -80,23 +71,16 @@
   
   
 			  <div class="col-md-8 col-lg-8 pb-4">
-  
-  
-				
-  
 				<form>
 				  
 					
 					
 					  <div class="form-group">
-						<label class="text-black" for="lname">שם פריט</label>
-						<input type="text" class="form-control" id="lname">
+						<label class="text-black" for="dname">שם פריט</label>
+						<input type="text" class="form-control" id="dname">
 					  </div>
-					
-				  
 				  
 					  <div class="form-group">
-						<label class="text-black" for="lname">קטגוריה</label>
 					 <label class="text-black" for="category">קטגוריה</label>
             <select class="form-control text-right" id="category" name="category">
                 <option value="" disabled="" selected="" class="text-end">בחר קטגוריה</option>
@@ -117,118 +101,21 @@
 					
     
 					  <div class="form-group">
-						<label class="text-black" for="lname">יצרן</label>
-						<input type="text" class="form-control" id="lname">
+						<label class="text-black" for="manufacturer">יצרן</label>
+						<input type="text" class="form-control" id="manufacturer">
 					  </div>
 					
   
 					  <div class="form-group">
-						<label class="text-black" for="lname">שנות מדף</label>
+						<label class="text-black" for="shelfYears">שנות מדף</label>
 						 <input type="number" class="form-control" id="shelfYears" name="shelfYears" min="0" max="100">
 					  </div>
 					
     
 					  <div class="form-group">
-						 <label class="text-black" for="pickupCity">נקודת איסוף</label>
-                                <select class="form-control text-right" id="pickupCity" name="pickupCity">
-                                    <option value="" disabled="" selected="" class="text-end">בחר עיר</option>
-                                    <option value="ירושלים">ירושלים</option>
-                                    <option value="תל אביב-יפו">תל אביב-יפו</option>
-                                    <option value="חיפה">חיפה</option>
-                                    <option value="ראשון לציון">ראשון לציון</option>
-									<option value="פתח תקווה">פתח תקווה</option>
-									<option value="נתניה">נתניה</option>
-									<option value="אשדוד">אשדוד</option>
-									<option value="בני ברק">בני ברק</option>
-									<option value="באר שבע">באר שבע</option>
-									<option value="חולון">חולון</option>
-									<option value="רמת גן">רמת גן</option>
-									<option value="בית שמש">בית שמש</option>
-									<option value="אשקלון">אשקלון</option>
-									<option value="רחובות">רחובות</option>
-									<option value="בת ים">בת ים</option>
-									<option value="הרצליה">הרצליה</option>
-									<option value="חדרה">חדרה</option>
-									<option value="כפר סבא">כפר סבא</option>
-									<option value="מודיעין מכבים רעות">מודיעין מכבים רעות</option>
-									<option value="לוד">לוד</option>
-									<option value="מודיעין עילית">מודיעין עילית</option>
-									<option value="רעננה">רעננה</option>
-									<option value="נצרת">נצרת</option>
-									<option value="רמלה">רמלה</option>
-									<option value="רהט">רהט</option>
-									<option value="ראש העין">ראש העין</option>
-									<option value="הוד השרון">הוד השרון</option>
-									<option value="נהריה">נהריה</option>
-									<option value="גבעתיים">גבעתיים</option>
-									<option value="קריית גת">קריית גת</option>
-									<option value="קריית אתא">קריית אתא</option>
-									<option value="עפולה">עפולה</option>
-									<option value="אום אל פחם">אום אל פחם</option>
-									<option value="יבנה">יבנה</option>
-									<option value="אילת">אילת</option>
-									<option value="נס ציונה">נס ציונה</option>
-									<option value="עכו">עכו</option>
-									<option value="אלעד">אלעד</option>
-									<option value="רמת השרון">רמת השרון</option>
-									<option value="טבריה">טבריה</option>
-									<option value="קריית מוצקין">קריית מוצקין</option>
-									<option value="כרמיאל">כרמיאל</option>
-									<option value="טייבה">טייבה</option>
-									<option value="קריית ביאליק">קריית ביאליק</option>
-									<option value="נוף הגליל">נוף הגליל</option>
-									<option value="נתיבות">נתיבות</option>
-									<option value="שפרעם">שפרעם</option>
-									<option value="קריית אונו">קריית אונו</option>
-									<option value="קריית ים">קריית ים</option>
-									<option value="מעלה אדומים">מעלה אדומים</option>
-									<option value="צפת">צפת</option>
-									<option value="אור יהודה">אור יהודה</option>
-									<option value="דימונה">דימונה</option>
-									<option value="טמרה">טמרה</option>
-									<option value="אופקים">אופקים</option>
-									<option value="סחנין">סחנין</option>
-									<option value="באקה אל גרבייה">באקה אל גרבייה</option>
-									<option value="יהוד מונסון">יהוד מונסון</option>
-									<option value="באר יעקב">באר יעקב</option>
-									<option value="חריש">חריש</option>
-									<option value="גבעת שמואל">גבעת שמואל</option>
-									<option value="כפר יונה">כפר יונה</option>
-									<option value="ערד">ערד</option>
-									<option value="טירה">טירה</option>
-									<option value="טירת הכרמל">טירת הכרמל</option>
-									<option value="עראבה">עראבה</option>
-									<option value="מגדל העמק">מגדל העמק</option>
-									<option value="יקנעם עילית">יקנעם עילית</option>
-									<option value="גני תקווה">גני תקווה</option>
-									<option value="מעאר">מעאר</option>
-									<option value="קריית שמונה">קריית שמונה</option>
-									<option value="מעלות תרחישא">מעלות תרחישא</option>
-									<option value="כפר קרע">כפר קרע</option>
-									<option value="אור עקיבא">אור עקיבא</option>
-									<option value="אריאל">אריאל</option>
-									<option value="בית שאן">בית שאן</option>
-                                    <option value="ביתר עילית">ביתר עילית</option>
-                                    <option value="קריית מלאכי">קריית מלאכי</option>
-                                    <option value="כפר קאסם">כפר קאסם</option>
-                                    <option value="נשר">נשר</option>
-                                    <option value="קלנסווה">קלנסווה</option>
-									<option value="תלמי אליהו">תלמי אליהו</option>
-									<option value="תלמי יוסף">תלמי יוסף</option>
-									<option value="תלמי יחיאל">תלמי יחיאל</option>
-									<option value="תל יוסף">תל יוסף</option>
-									<option value="תל יצחק">תל יצחק</option>
-									<option value="תל מונד">תל מונד</option>
-									<option value="תל עדשים">תל עדשים</option>
-									<option value="תל קציר">תל קציר</option>
-									<option value="תל שבע">תל שבע</option>
-									<option value="תל תאומים">תל תאומים</option>
-									<option value="תלם">תלם</option>
-									<option value="אזור">אזור</option>
-									<option value="אלפי מנשה">אלפי מנשה</option>
-
-					  </select>
-					</div>
+						<label class="text-black" for="Address">כתובת (לדוגמה - שדרות ירושלים 196 חולון)  </label>
+						<input type="text" class="form-control" id="Address">
+					  </div>
 					
 				  <div class="form-group mb-5">
 					<label class="text-black" for="Image">העלאת תמונה</label>
@@ -250,7 +137,7 @@
 	  </div>
 	
   
-	<!-- End Contact Form -->
+	<!-- End upload Form -->
   
 		  
   
@@ -290,7 +177,7 @@
 
 					<div class="col-6 col-sm-6 col-md-3">
 						<ul class="list-unstyled">
-							<li><a href="#"> תרומה כספית</a></li>
+							<li><a href="MoneyDonation.html"> תרומה כספית</a></li>
 						</ul>
 					</div>
 				</div>

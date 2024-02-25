@@ -618,7 +618,7 @@ a {
     .footer-section .border-top.copyright {
       font-size: 14px !important; }
 
-.untree_co-section {
+.sadna-section {
   padding: 7rem 0; }
 
 .form-control {
@@ -735,4 +735,8 @@ textarea {
 .donationGroup{
   white-space: nowrap;
 
+}
+
+.troma-img {
+  text-align: left;
 }

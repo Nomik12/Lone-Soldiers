@@ -1,0 +1,190 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/static/images/Logo.png">
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+
+    <!-- Bootstrap CSS -->
+	<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+	<link href="/static/css/tiny-slider.css" rel="stylesheet">
+	<link href="/static/css/style.css" rel="stylesheet">
+    <title>האתר לתמיכה בחיילים בודדים</title>
+</head>
+
+<body>
+
+    <!-- Start Header -->
+    <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark">
+
+        <div class="container">
+            <a class="navbar-brand" href="/"><img src="/static/images/Logo.png" alt="Logo Image" class="img-fluid custom-logo"></a>
+        </div>
+
+    </nav>
+    <!-- End Header -->
+    <!-- Start main title Section -->
+    <div class="hero">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-5">
+                    <div class="intro-excerpt">
+                        <h1>רישום לפרופיל משפחה </h1>
+                        <p class="fs-5 ">אף חייל אינו בודד יותר, אנחנו איתם! לפתיחת הפרופיל האישי מלאו את הפרטים הבאים והצטרפו אלינו לתמיכה בחיילים הבודדים</p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="hero-img-wrap">
+                        <img src="/static/images/registration.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End main title Section -->
+    <!-- Start registration Form -->
+    <div class="sadna-section">
+        <div class="container">
+
+            <div class="block">
+                <div class="row justify-content-center">
+
+
+                    <div class="col-md-8 col-lg-8 pb-4">
+
+
+
+                        <form action="/FamilyRegistration" method="post" enctype="multipart/form-data">
+                            <h2>מילוי פרטים אישיים:</h2>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label class="text-black" for="fname"> שם פרטי (נציג המשפחה)</label>
+                                        <input type="text" class="form-control" id="fname" name="first_name" required>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label class="text-black" for="lname">שם משפחה</label>
+                                        <input type="text" class="form-control" id="l=lname" name="last_name" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="text-black" for="id">תעודת זהות</label>
+                                    <input type="text" class="form-control" id="id" name="id">
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label class="text-black" for="email">דוא"ל</label>
+                                <input type="text" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label class="text-black" for="city">עיר</label>
+                                        <input type="text" class="form-control" id="City" name="city">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label class="text-black" for="street">רחוב</label>
+                                        <input type="text" class="form-control" id="Street" name="street">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label class="text-black" for="house_num">מס' בית</label>
+                                        <input type="text" class="form-control" id="house_num" name="house_num">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="text-black" for="family_hobby">תחביב משפחתי</label>
+                                <input type="text" class="form-control" id="family_hobby" name="family_hobby">
+                            </div>
+                            <br />
+                            <div class="form-group">
+                                <label class="text-black" for="picture"> העלה תמונה לפרופיל המשפחתי</label>
+                                <input type="file" class="form-control-file" id="picture" name="picture">
+                            </div>
+                            <br />
+                            <div class="form-group">
+                                <label class="text-black" for="password">בחר את הסיסמה עבור המשתמש שלך </label>
+                                <input type="password" class="form-control" id="password" name="password" required>
+                            </div>
+                            <br/>
+                            <button type="submit" class="btn btn-primary-hover-outline">הירשם</button>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- End registration Form -->
+    <!-- Start Footer Section -->
+    <footer class="footer-section">
+        <div class="container relative">
+
+
+
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">יחד<span>.</span></a></div>
+                    <p class="mb-4">
+                        "יחד" – העמותה לחייל הבודד, החל משנת 2007.
+                        מטרת העמותה היא בראש ובראשונה לתמוך בחיילי צה"ל ולסייע להם. אנו מבקשים להעביר לחיילנו מסר חשוב – עם ישראל מוקיר מקרב לב את התרומה והשרות רווי הסכנות שהחיילים מעניקים לארץ ולאזרחיה.
+                        כל מתנדבי העבודה עושים זאת ללא שום גמול כספי וללא החזר הוצאות.
+                    </p>
+
+                    <ul class="list-unstyled custom-social">
+                        <li><a href="https://www.facebook.com/loboded/?locale=he_IL"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="row links-wrap">
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li><a href="index">דף הבית</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-top copyright">
+                <div class="row pt-4">
+                    <div class="col-lg-6">
+                        <p class="me-4"><a href="https://www.mta.ac.il/he-il/">סדנה 2024 האקדמית תל אביב יפו, מערכות מידע,שנה ד</a></p>
+                    </div>
+
+                    <div class="col-lg-6 text-center text-lg-end">
+                        <ul class="list-unstyled d-inline-flex ms-auto">
+                            <li><a>נעמי קולמן, גיל אלוני, רוני בסל לוי</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+
+
+
+	<script src="/static/js/bootstrap.bundle.min.js"></script>
+	<script src="/static/js/tiny-slider.js"></script>
+	<script src="/static/js/custom.js"></script>
+</body>
+
+</html>

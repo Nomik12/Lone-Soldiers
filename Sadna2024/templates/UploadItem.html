@@ -1,0 +1,217 @@
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="/static/images/Logo.png">
+	<meta name="keywords" content="bootstrap, bootstrap4">
+  
+		  <!-- Bootstrap CSS -->
+		  <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+		  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+		  <link href="/static/css/tiny-slider.css" rel="stylesheet">
+		  <link href="/static/css/style.css" rel="stylesheet">
+		  <title>האתר לתמיכה בחיילים בודדים </title>
+			  </head>
+  
+	  <body>
+  
+		  <!-- Start Header-->
+		  <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark">
+  
+			  <div class="container">
+				<a class="navbar-brand" href="FamilyHomePage">
+					<img src="/static/images/Logo.png" alt="Logo Image" class="img-fluid custom-logo">
+					
+				</a>
+  
+  
+				  <div class="navbar-collapse collapse show">
+					  <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						  <li class="nav-item">
+							  <a class="nav-link" href="FamilyHomePage">דף בית</a>
+						  </li>
+						  <li><a class="nav-link" href="UploadItem">העלאת ציוד לתרומה</a></li>
+						  <li><a class="nav-link" href="MoneyDonation">תרומה כספית</a></li>	  
+					  </ul>
+  
+					  
+				  </div>
+			  </div>
+				  
+		  </nav>
+		  <!-- End Header -->
+  
+		  <!-- Start main title Section -->
+			  <div class="hero">
+				  <div class="container">
+					  <div class="row justify-content-between">
+						  <div class="col-lg-5">
+							  <div class="intro-excerpt">
+								  <h1>פרסום מודעת ציוד לתרומה</h1>
+								  
+								  
+							  </div>
+						  </div>
+						  <div class="col-lg-7">
+							  <div class="hero-img-wrap">
+								  <img src="/static/images/picture16.jpg.png" class="img-fluid">
+							  </div>
+						  </div>
+					  </div>
+				  </div>
+			  </div>
+		  <!-- End main title Section -->
+  
+		  
+		  <!-- Start upload Form -->
+		  <div class="sadna-section">
+		<div class="container">
+  
+		  <div class="block">
+			<div class="row justify-content-center">
+  
+  
+			  <div class="col-md-8 col-lg-8 pb-4">
+				<form action="/UploadItem" method="post" enctype="multipart/form-data">
+				  
+					  <div class="form-group">
+						<label class="text-black" for="item_name">שם פריט</label>
+						<input type="text" class="form-control" id="item_name" name="item_name" required>
+					  </div>
+				  
+					  <div class="form-group">
+					 <label class="text-black" for="category">קטגוריה</label>
+            <select class="form-control text-right" id="category" name="category" required>
+                <option value="" disabled="" selected="" class="text-end">בחר קטגוריה</option>
+                <option value="אביזרי מטבח">אביזרי מטבח</option>
+                <option value="חדר שינה">חדר שינה</option>
+                <option value="ארונות">ארונות</option>
+                <option value="ספה">ספה</option>
+                <option value="ביגוד והנעלה">ביגוד והנעלה</option>
+                <option value="ספרים">ספרים</option>
+                <option value="שולחנות">שולחנות</option>
+                <option value="כיסאות">כיסאות</option>
+                <option value="ציוד משרדי">ציוד משרדי</option>
+                <option value="ציוד צבאי">ציוד צבאי</option>
+                <option value="אביזרי כושר">אביזרי כושר</option>
+				<option value="אביזרי חשמל">אביזרי חשמל</option>
+                <option value="אחר">אחר</option>
+            </select>
+					  </div>
+					
+    
+					  <div class="form-group">
+						<label class="text-black" for="manufacturer">יצרן</label>
+						<input type="text" class="form-control" id="manufacturer" name="manufacturer">
+					  </div>
+					
+  
+					  <div class="form-group">
+						<label class="text-black" for="shelfYears">שנות מדף</label>
+						 <input type="number" class="form-control" id="shelfYears" name="shelf_years" min="0" max="100">
+					  </div>
+					
+    
+					  <div class="form-group">
+						<label class="text-black" for="collecting_point">כתובת (לדוגמה - שדרות ירושלים 196 חולון)  </label>
+						<input type="text" class="form-control" id="collecting_point" name="collecting_point" required>
+					  </div>
+
+					  <div class="form-group">
+						<label class="text-black" for="phone">טלפון ליצירת קשר</label>
+						<input type="text" class="form-control" id="phone" name="phone" required>
+					  </div>
+					
+				  <div class="form-group mb-5">
+					<label class="text-black" for="picture">העלאת תמונה</label>
+					 <input type="file" class="form-control" id="picture" name="picture" required>
+				  </div>
+  
+				  <button type="submit" class="btn btn-primary-hover-outline">העלאת מודעה</button>
+				</form>
+  
+			  </div>
+  
+			</div>
+  
+		  </div>
+  
+		</div>
+  
+  
+	  </div>
+	
+  
+	<!-- End upload Form -->
+  
+		  
+  
+<!-- Start Footer Section -->
+<footer class="footer-section">
+	<div class="container relative">
+
+
+
+		<div class="row g-5 mb-5">
+			<div class="col-lg-4">
+				<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">יחד<span>.</span></a></div>
+				<p class="mb-4">
+					"יחד" – העמותה לחייל הבודד, החל משנת 2007.
+					מטרת העמותה היא בראש ובראשונה לתמוך בחיילי צה"ל ולסייע להם. אנו מבקשים להעביר לחיילנו מסר חשוב – עם ישראל מוקיר מקרב לב את התרומה והשרות רווי הסכנות שהחיילים מעניקים לארץ ולאזרחיה.
+					כל מתנדבי העבודה עושים זאת ללא שום גמול כספי וללא החזר הוצאות.
+				</p>
+
+				<ul class="list-unstyled custom-social">
+					<li><a href="https://www.facebook.com/loboded/?locale=he_IL"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+				</ul>
+			</div>
+
+			<div class="col-lg-8">
+				<div class="row links-wrap">
+					<div class="col-6 col-sm-6 col-md-3">
+						<ul class="list-unstyled">
+							<li><a href="FamilyHomePage">דף הבית</a></li>
+						</ul>
+					</div>
+
+					<div class="col-6 col-sm-6 col-md-3">
+						<ul class="list-unstyled">
+							<li><a href="UploadItem">העלאת ציוד לתרומה</a></li>
+						</ul>
+					</div>
+
+					<div class="col-6 col-sm-6 col-md-3">
+						<ul class="list-unstyled">
+							<li><a href="MoneyDonation"> תרומה כספית</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="border-top copyright">
+			<div class="row pt-4">
+				<div class="col-lg-6">
+					<p class="me-4"><a href="https://www.mta.ac.il/he-il/">סדנה 2024 האקדמית תל אביב יפו, מערכות מידע,שנה ד</a></p>
+				</div>
+
+				<div class="col-lg-6 text-center text-lg-end">
+					<ul class="list-unstyled d-inline-flex ms-auto">
+						<li><a>נעמי קולמן, גיל אלוני, רוני בסל לוי</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</footer>
+<!-- End Footer Section -->
+  
+  
+	<script src="/static/js/bootstrap.bundle.min.js"></script>
+	<script src="/static/js/tiny-slider.js"></script>
+	<script src="/static/js/custom.js"></script>
+	  
+  
+  
+  </body></html>

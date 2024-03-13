@@ -343,7 +343,7 @@ def show_filtered_inventory():
             origin_address = origin_address.replace(" ", "%")
             dest_address = dest_address.replace(" ", "%")
 
-            url = f"https://maps.googleapis.com/maps/api/distancematrix/json?destinations={dest_address}&origins={origin_address}&units=metric&key=XXX"
+            url = f"https://maps.googleapis.com/maps/api/distancematrix/json?destinations={dest_address}&origins={origin_address}&units=metric&key=AIzaSyBlw0hXPaso6Z2om7XNBCpXJdctrAb2zPg"
             r = requests.get(url)
             data = r.json()
 
